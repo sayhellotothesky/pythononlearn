@@ -1,0 +1,24 @@
+python 遍历数组
+python中遍历数组:
+
+for item in sequence:
+    print item
+但是python上面的方法不能取到索引,需要取到索引索引可以:
+
+for index in range(len(sequence)):
+       print index,sequence[index]
+更简单的办法为:
+
+for index, item in enumerate(sequence):
+  print index, item
+  enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，
+  同时列出数据和数据下标，一般用在 for 循环当中，2.6之后可以设置初始下标
+  列表解析
+　　根据已有列表，高效创建新列表的方式。
+    列表解析是Python迭代机制的一种应用，它常用于实现创建新的列表，因此用在[]中。
+
+语法：
+
+　　[expression for iter_val in iterable]
+
+　　[expression for iter_val in iterable if cond_expr]
