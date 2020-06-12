@@ -8,3 +8,33 @@ Python3 集合
 parame = {value01,value02,...}
 或者
 set(value)
+集合的基本操作
+集合内置方法完整列表
+方法	描述
+add()	为集合添加元素
+clear()	移除集合中的所有元素
+copy()	拷贝一个集合
+difference()	返回多个集合的差集
+difference_update()	移除集合中的元素，该元素在指定的集合也存在。
+discard()	删除集合中指定的元素
+intersection()	返回集合的交集
+intersection_update()	返回集合的交集。
+isdisjoint()	判断两个集合是否包含相同的元素，如果没有返回 True，否则返回 False。
+issubset()	判断指定集合是否为该方法参数集合的子集。
+issuperset()	判断该方法的参数集合是否为指定集合的子集
+pop()	随机移除元素
+remove()	移除指定元素
+len()集合长度
+下面展示两个集合间的运算.
+>>> a = set('abracadabra')
+>>> b = set('alacazam')
+>>> a                                  
+{'a', 'r', 'b', 'c', 'd'}
+>>> a - b                              # 集合a中包含而集合b中不包含的元素
+{'r', 'd', 'b'}
+>>> a | b                              # 集合a或b中包含的所有元素
+{'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}
+>>> a & b                              # 集合a和b中都包含了的元素
+{'a', 'c'}
+>>> a ^ b                              # 不同时包含于a和b的元素
+{'r', 'd', 'b', 'm', 'z', 'l'}
